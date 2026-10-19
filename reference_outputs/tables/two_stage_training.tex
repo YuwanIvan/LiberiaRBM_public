@@ -1,0 +1,67 @@
+\begin{table}[!ht]
+    \centering
+    \caption{Network architecture and training parameters
+    for the two-stage backward training routine.}
+    \label{tab:two_stage_training}
+    \footnotesize
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.0}
+
+    \begin{tabular}{lcc}
+        \toprule
+        Parameter & Coarse stage ($M_c=110$) & Fine stage ($M=1{,}100$) \\
+        \midrule
+        \multicolumn{3}{l}{\it Panel A: Network architecture.} \\
+        Input dimension & \multicolumn{2}{c}{$9$} \\
+        $H_m$/$G_m$ output dimension & \multicolumn{2}{c}{$1$, $8$} \\
+        Number of hidden layers & \multicolumn{2}{c}{$4$} \\
+        Number of neurons per layer & \multicolumn{2}{c}{$512$} \\
+        Hidden-layer activation & \multicolumn{2}{c}{GELU} \\
+        $H_m$/$G_m$ output bias & \multicolumn{2}{c}{No, Yes} \\ 
+        Input normalization & \multicolumn{2}{c}{$(z,q)/Q_0$} \\
+        $H_m$/$G_m$ output multiplier & \multicolumn{2}{c}{$0.25$, $1$} \\
+        \midrule
+        \multicolumn{3}{l}{\it Panel B: General training parameters.} \\
+        Consistency coefficient $\zeta$ & \multicolumn{2}{c}{$30$} \\
+        $H_m$/$G_m$ random initialization & \multicolumn{2}{c}{Xavier-uniform, Kaiming-uniform} \\
+        Optimizer & \multicolumn{2}{c}{Adam} \\
+        Training batch/validation sample size & \multicolumn{2}{c}{$3{,}072$, $16{,}384$} \\
+        % Gradient-clipping rule & Joint $H_m/G_m$ norm & Joint $H_m/G_m$ norm \\
+        Joint gradient-clipping threshold & \multicolumn{2}{c}{$1$} \\
+        \midrule
+        \multicolumn{3}{l}{\it Panel C: Terminal interval training parameters.} \\
+        Maximum iterations & $50{,}000$ & $30{,}000$ \\ 
+        Learning rate & 
+        \makecell{\scriptsize $10^{-3}$ $[0,10{,}000)$\\ \scriptsize $5\times 10^{-4}$ $[10{,}000,30{,}000)$ \\ \scriptsize $2.5\times 10^{-4}$ $[30{,}000,50{,}000)$} & \makecell{\scriptsize $10^{-3}$ $[0,6{,}000)$\\ \scriptsize $5\times 10^{-4}$ $[6{,}000,18{,}000)$ \\ \scriptsize $2.5\times 10^{-4}$ $[18{,}000,30{,}000)$} \\
+        % Learning-rate milestones & $10{,}000,\ 30{,}000$ & $6{,}000,\ 18{,}000$ \\ 
+        % Learning-rate decay factor & $0.5$ & $0.5$ \\ 
+        Early stopping & Disabled & Disabled \\
+        \midrule
+        \multicolumn{3}{l}{\it Panel D: Interior interval training parameters.}\\
+        Maximum iterations & $8{,}000$ & $2{,}500$ \\
+        Learning rate & 
+        \makecell{\scriptsize $2\times10^{-4}$ $[0,1{,}000)$\\ \scriptsize $10^{-4}$ $[1{,}000,4{,}000)$ \\ \scriptsize $5\times 10^{-5}$ $[4{,}000,8{,}000)$} & \makecell{\scriptsize $2\times10^{-4}$ $[0,400)$\\ \scriptsize $10^{-4}$ $[400,1{,}200)$ \\ \scriptsize $5\times 10^{-5}$ $[1{,}200,2{,}500)$} \\
+        % Learning rate & $2\times10^{-4}$ & $2\times10^{-4}$ \\
+        % Learning-rate milestones & $1{,}000,\ 4{,}000$ & $400,\ 1{,}200$ \\
+        % Learning-rate decay factor & $0.5$ & $0.5$ \\
+        Early stopping & Enabled & Enabled \\
+        Minimum iterations & $1{,}200$ & $1{,}200$ \\
+        Patience (iterations) & $1{,}500$ & $1{,}500$ \\
+        Minimum validation improvement & $5\times10^{-5}$ & $5\times10^{-5}$ \\
+        \bottomrule
+    \end{tabular}
+    % \medskip
+    % \begin{minipage}{\textwidth}
+    %     \footnotesize
+    %     \textit{Notes.}
+    %     Random-initialization settings apply to fresh networks;
+    %     backward and blockwise initialization replace these
+    %     weights with transferred parameters.
+    %     The interior schedule applies to ordinary warm starts
+    %     and nonterminal coarse-initialized block entries.
+    %     Patience is implemented through validation checks:
+    %     stopping requires more than 60 and 30 consecutive
+    %     non-improving checks in the coarse and fine stages,
+    %     respectively, subject to the minimum-iteration requirement.
+    % \end{minipage}
+\end{table}

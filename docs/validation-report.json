@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T04:12:11.316435+00:00",
+  "scope": "Public package integrity, retained numerical inputs and isolated-environment figure/table reproduction.",
+  "copy_manifest_records": 828,
+  "copy_manifest_hashes_match": true,
+  "clean_environment_report": "clean-environment-validation.json",
+  "public_package_checks": {
+    "working_manuscript_included": false,
+    "exploratory_experiment_records_included": false,
+    "working_notes_included": false,
+    "original_CHA_observations_included": false,
+    "notebook_outputs_contain_work_notes": false,
+    "notebook_outputs_contain_original_CHA_records": false,
+    "final_model_configurations": 82,
+    "configuration_index_hashes_verified": true,
+    "external_dependencies_use_opaque_identifiers": true,
+    "publishable_files_checked": 855,
+    "baseline_comparison_stream": 16,
+    "baseline_comparison_rows": 7,
+    "frontier_points_retained": 35,
+    "source_quality_flags_retained": true,
+    "cluster_job_id_columns_in_saved_results": false,
+    "experiment_selection_rules_included": false
+  },
+  "numerical_integrity": {
+    "comparison_scope": "This cleanup compared all retained CSV rows, scientific configurations, notebook computations and workbook contents against the immediately preceding public package.",
+    "retained_data_csv_files": 41,
+    "unchanged_numeric_data_cells": 718275,
+    "all_csv_numeric_cells_checked": 720734,
+    "all_csv_files_checked": 67,
+    "final_configuration_jsons": 84,
+    "scientific_json_files_checked": 670,
+    "python_files_checked": 63,
+    "notebook_code_cells_checked": 38,
+    "workbook_cells_formulas_and_format_xml_unchanged": true,
+    "workbook_metadata_only_changes": 3,
+    "simulation_array_bytes_unchanged": true,
+    "reference_image_bytes_unchanged": true,
+    "computation_unchanged_after_documented_naming_changes": true,
+    "original_calibration_outputs_unchanged": true
+  },
+  "analysis_unit_tests": {
+    "tests": 6,
+    "exit_code": 0
+  },
+  "notebook": {
+    "inputs": {
+      "status": "PASS",
+      "frozen_files_checked": 626,
+      "table_cells_recomputed": 144,
+      "baseline_policies_checked": [
+        "E3_mean_rollout",
+        "Scaled_Static"
+      ],
+      "baseline_inventory_coordinates_checked": 414,
+      "ci_definition": "pointwise normal 95% CI of Monte Carlo mean; fixed training seed16",
+      "checks": [
+        "source SHA256",
+        "table recomputation and rounding",
+        "inventory SD/SE/CI",
+        "location shipment sums",
+        "warehouse balance",
+        "fairness frontier evaluation identity"
+      ],
+      "limitations": [
+        "Appendix config audit covers selected initialization dependencies; notebook adds baseline historical-code checks",
+        "Baseline marginal coverage is separately checked by paper_analysis.coverage; joint coverage is outside current scope",
+        "PPT model schematic is externally maintained; calibration rerender is not old PDF byte replica",
+        "Travel unmet retains manuscript accepted two-decimal source precision"
+      ]
+    },
+    "coverage": {
+      "status": "PASS",
+      "input_files_checked": 4,
+      "aligned_coordinate_intervals": 9900,
+      "reference_source": "training_sampler: logged R4 validation-state sample, 16384 per interval",
+      "query_source": "E3 periodic virtual query states, 10000 per fine interval",
+      "aggregation": "query-count-weighted recorded marginal fractions over 1100 intervals",
+      "limits": "Empirical marginal coverage only; not joint coverage or coverage of the unknown true optimum. Quantiles are not mean CIs."
+    },
+    "training_config_checks": 3280,
+    "training_config_mismatches": 0,
+    "figure_count": 10,
+    "manuscript_tables": 7,
+    "training_detail_rows": 42
+  },
+  "trajectory": {
+    "status": "PASS",
+    "paths": 10000,
+    "hashes": {
+      "periodic_review_state_histories_v1.npz": "79c003d69b5a062a82262e5104a1fbeaed4a0937a97484c6c41ce505cb26e0dc",
+      "periodic_review_demands.npy": "d688d27a5b2ae3a76090192427a1442a787c0d243c35b7e8a0c4c00837febde4"
+    },
+    "q_reconstructed_min": -2.7941167360268082e-05,
+    "checks": 36,
+    "reconstruction": "a=diff(Z)+native demand+HF referrals-local unmet; Q=142-cumulative total a",
+    "source_kind": "saved_simulation_results",
+    "source_artifact": "external/artifact-389b5d18db41c2ad",
+    "demand": "calibrated native weekly means; HF excludes referrals; Warehouse uses system sum",
+    "bands": "pointwise empirical path quantiles, not confidence intervals",
+    "q_display": "clip negative roundoff to zero; retain raw values in path_quantiles.csv"
+  },
+  "reference_table_csv_matches": {
+    "tab:baseline_compact_comparison": true,
+    "tab:travel_cost_summary": true,
+    "tab:demand_overdispersion_performance": true,
+    "tab:demand_correlation_summary": true,
+    "tab:hf_demand_summary": true,
+    "tab:initial_inventory_response": true,
+    "tab:baseline_parameters": true,
+    "tab:two_stage_training": true
+  },
+  "all_generated_asset_paths_exist": true,
+  "original_research_files_verified_unchanged": 853,
+  "limitations": [
+    "Reproduction uses saved simulation results. Full training and pretrained reevaluation were not performed.",
+    "Original CHA observations and model weights are not included.",
+    "Two schematic diagrams are static references.",
+    "MIT covers code and software documentation; no separate data license is assigned."
+  ],
+  "release_content_review": {
+    "status": "PASS",
+    "checked": {
+      "files": 920,
+      "workbooks": 3,
+      "workbook_members": 30,
+      "pdfs": 23,
+      "pngs": 16,
+      "notebooks": 3,
+      "embedded_notebook_images": 16
+    },
+    "findings": [],
+    "broken_document_links": [],
+    "legacy_serialization_compatibility_literals_retained": 2,
+    "working_manuscript_present": false,
+    "original_CHA_workbook_present": false,
+    "scope": "Publishable files and locally generated outputs, including workbook ZIP members, notebook metadata and embedded PNG metadata, PDF text and metadata, and PNG metadata.",
+    "pdf_object_review": {
+      "pdf_files": 23,
+      "pdf_objects_inspected": 770,
+      "annotations_inspected": 0,
+      "xmp_streams_inspected": 1,
+      "embedded_mathml_equation_attachments_checked": 7,
+      "sensitive_metadata_matches": 0
+    },
+    "array_metadata_review": {
+      "numeric_arrays_checked": 6,
+      "schema_and_policy_metadata_arrays_checked": 2,
+      "pickle_loading_required": false,
+      "unexpected_metadata_fields": 0
+    },
+    "retained_compatibility_reason": "Two serialized legacy values remain necessary for existing artifact certificates and shared-storage path comparisons. They contain no personal directories or job identifiers.",
+    "workbook_metadata_changes": "Removed local save paths and editor names. All worksheet, shared-string and style XML remains byte-identical.",
+    "checked_at_utc": "2026-10-19T04:13:35.532446+00:00"
+  }
+}

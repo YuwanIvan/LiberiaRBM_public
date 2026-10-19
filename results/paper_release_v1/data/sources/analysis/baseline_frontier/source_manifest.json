@@ -1,0 +1,47 @@
+{
+  "convention": "Stream 16; reported configuration; frozen 10,000-path evaluation",
+  "orientation": "Panel A: fairness improves right; operating cost improves upward",
+  "source_records": [
+    {
+      "setting": "nominal_lam0p10",
+      "path": "external/artifact-568104a1d7871931",
+      "sha256": "9fb6bacefbab50531642d714e4c71facac2d30abf0219df155bb8e07eddce5a5",
+      "policy": "E3_mean_rollout",
+      "stream": 16,
+      "evaluation_paths": 10000
+    },
+    {
+      "setting": "nominal_lam0p25",
+      "path": "external/artifact-58a0d9684e49b9a1",
+      "sha256": "9b8d3c2661b0a1d89c44314474e63024e809d272808a748d1cb698fa65bf85c5",
+      "policy": "E3_mean_rollout",
+      "stream": 16,
+      "evaluation_paths": 10000
+    },
+    {
+      "setting": "nominal_lam0p50",
+      "path": "external/artifact-7d2149fd671486c3",
+      "sha256": "bb1c61ca8c4c4548cd1a622fb88a72a855c02bd259a086e35a7900fb390f3d55",
+      "policy": "E3_mean_rollout",
+      "stream": 16,
+      "evaluation_paths": 10000
+    },
+    {
+      "setting": "nominal_lam1p00",
+      "path": "external/artifact-d8adc815fdc2f634",
+      "sha256": "b670761bcd503988832b8ab878f29878784b615aba5bc158d69bb7dcd8f018ef",
+      "policy": "E3_mean_rollout",
+      "stream": 16,
+      "evaluation_paths": 10000
+    }
+  ],
+  "fairness_only_source": {
+    "path": "external/artifact-58a0d9684e49b9a1",
+    "sha256": "9b8d3c2661b0a1d89c44314474e63024e809d272808a748d1cb698fa65bf85c5",
+    "policy": "Scaled_Static"
+  },
+  "data": "external/artifact-c643ab1f783e639b",
+  "data_sha256": "54802b8a3cf5d5d376b133e2035f2940754c3c0158f707972dd84f6274b13189",
+  "figure": "external/artifact-12142f29361134ad",
+  "figure_sha256": "1fd080fcced445b57e184ac570ca29a349b493ba4270e2d2c1f8af78c28d082a"
+}

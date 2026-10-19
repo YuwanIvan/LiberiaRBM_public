@@ -1,0 +1,37 @@
+{
+  "arrays": {
+    "fine_grid_brownian_increments": {
+      "array_sha256": "848d656446a31ef315f522bb1e632b86f7489f48fefc4263492c853c9118841d",
+      "bytes": 352000128,
+      "dtype": "<f4",
+      "file_sha256": "133d0cc2e62b9a8607b4a8b7187b2834bae5ca989b77a4aa02996406d41491e4",
+      "path": "fine_grid_brownian_increments.npy",
+      "shape": [
+        1100,
+        10000,
+        8
+      ]
+    },
+    "periodic_review_demands": {
+      "array_sha256": "6b1c89c853e787c5f81031bdd9ddea5507bb6794875b18505d97daca1049e541",
+      "bytes": 7040128,
+      "dtype": "<f4",
+      "file_sha256": "d688d27a5b2ae3a76090192427a1442a787c0d243c35b7e8a0c4c00837febde4",
+      "path": "periodic_review_demands.npy",
+      "shape": [
+        22,
+        10000,
+        8
+      ]
+    }
+  },
+  "bank_id": "final-m1100-fangonda_base-paths10000-seed2026082202-v1",
+  "m": 1100,
+  "manifest_path": "external/artifact-3d19aae958066011",
+  "manifest_sha256": "0a83da336af8081af40de2e1b0b76f8cf43e06ade23d16ecc20e90d2d5d0eac4",
+  "num_paths": 10000,
+  "periodic_demand_mode": "binomial",
+  "scenario": "fangonda_base",
+  "schema_version": "frozen-evaluation-bank-v1",
+  "seed": 2026082202
+}

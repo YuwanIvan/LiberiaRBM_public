@@ -1,0 +1,9 @@
+{
+  "checkpoint_count": 1100,
+  "checkpoint_dir": "external/artifact-8e220ce785b7f655",
+  "config_path": "external/artifact-27cb286bbd36e5dc",
+  "config_sha256": "fd538049a0ca63ed16349ec4ca456a37ed6ea677f2b7966384d29d6c29c53958",
+  "schema_version": "evaluation-source-used-v1",
+  "source_run_dir": "external/artifact-998cf37998420b96",
+  "source_run_name": "m1100_chi1p25_bound_blockwise_base_stream16_a297718_cfgd0656c3bcb_v1"
+}

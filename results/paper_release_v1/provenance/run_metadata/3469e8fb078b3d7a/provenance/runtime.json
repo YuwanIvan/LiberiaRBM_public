@@ -1,0 +1,32 @@
+{
+  "run_id": "3469e8fb078b3d7a",
+  "repository": {
+    "commit": "f6553299baf9739fe8995537723786f1cfc4c0ef"
+  },
+  "environment": {
+    "python_version": "3.12.9 (main, Mar 27 2025, 19:42:53) [GCC 8.5.0 20210514 (Red Hat 8.5.0-24)]",
+    "torch": {
+      "cuda_available": true,
+      "cuda_build": "12.4",
+      "device_count": 1,
+      "device_names": [
+        "NVIDIA H200"
+      ],
+      "version": "2.6.0+cu124"
+    }
+  },
+  "artifacts": [
+    {
+      "role": "r2_training_reference",
+      "sha256": "d692e969c652aa139aa767e1cb0625c289cc96ffd6541f143675b944a023f06b"
+    },
+    {
+      "role": "target_lambda_fluid_benchmark",
+      "sha256": "be755a5c6840a69719022d6def4cc5e3511499115d0322860bed4952d2882c78"
+    },
+    {
+      "role": "evaluation_bank",
+      "sha256": "946f364732ff8c03b1aff46d38beb2f7d259bccd856a29aefb67cb2fdd55d047"
+    }
+  ]
+}

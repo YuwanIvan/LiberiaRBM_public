@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this software and the accompanying paper when using these materials. Author names follow the manuscript."
+title: "LiberiaRBM: A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program"
+type: software
+license: MIT
+version: "0.1.0-preparation"
+authors:
+  - family-names: Ata
+    given-names: Baris
+  - family-names: Chen
+    given-names: Yufan
+  - family-names: Montgomery
+    given-names: Robert

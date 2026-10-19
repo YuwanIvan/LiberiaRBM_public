@@ -1,0 +1,68 @@
+{
+  "source": "CHA_weekly.xlsx weeks 5-26",
+  "active_begin_week": 5,
+  "active_end_week": 26,
+  "N_h": 219,
+  "N_c": 28,
+  "K": 7,
+  "I0": 142.0,
+  "p": 0.69,
+  "cost_units": "one untreated under-five malaria episode",
+  "w": 0.68,
+  "kappa": 0.15,
+  "untreated_cost": 1.0,
+  "normalization_caregiver_hours": 64.0,
+  "normalization_denominator_formula": "64*w",
+  "referral_hours": 8.0,
+  "distance_miles": [
+    0.0,
+    11.0,
+    3.8,
+    3.0,
+    0.25,
+    5.0,
+    5.0,
+    0.5
+  ],
+  "referral_costs": [
+    0.0,
+    0.20082720588235292,
+    0.15119485294117646,
+    0.1456801470588235,
+    0.1267233455882353,
+    0.15946691176470587,
+    0.15946691176470587,
+    0.1284466911764706
+  ],
+  "effective_shortage_costs": [
+    1.0,
+    0.4485707720588235,
+    0.41432444852941174,
+    0.4105193014705882,
+    0.39743910845588234,
+    0.420032169117647,
+    0.420032169117647,
+    0.3986282169117647
+  ],
+  "expected_normalized_baseline_c": [
+    1.0,
+    0.4486,
+    0.4143,
+    0.4105,
+    0.3974,
+    0.42,
+    0.42,
+    0.3986
+  ],
+  "normalized_baseline_c_validation_atol": 0.0001,
+  "total_expected_demand": 207.5,
+  "hf_expected_demand": 109.50000000000001,
+  "cha_expected_demand": 98.0,
+  "supply_coverage": 0.6843373493975904,
+  "eta_details": {
+    "rho_bar": 0.3156626506024096,
+    "rho_raw": 0.3156626506024096,
+    "total_expected_demand": 207.5,
+    "slack_multiplier": 1.0
+  }
+}

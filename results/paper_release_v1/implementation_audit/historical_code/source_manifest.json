@@ -1,0 +1,38 @@
+[
+  {
+    "commit": "6cf8127e4593552bddec41e2ccac99d1b5ba27dd",
+    "source_path": "solver.py",
+    "bundle_path": "implementation_audit/historical_code/6cf8127_solver.py",
+    "sha256": "dd1e59338ad4bf4470957e23e027e5574844e92c424281e9ed7a892e96b45423",
+    "original_sha256": "e3fe0afb06d83dfecb906cfe645c0a915bd9991dcc3b25e6673a0de39c8e16a4",
+    "adaptation": "Comments and non-numerical message text only."
+  },
+  {
+    "commit": "a297718acb832f82c62e95c26482a293e85650cd",
+    "source_path": "solver.py",
+    "bundle_path": "implementation_audit/historical_code/a297718_solver.py",
+    "sha256": "dd1e59338ad4bf4470957e23e027e5574844e92c424281e9ed7a892e96b45423",
+    "original_sha256": "e3fe0afb06d83dfecb906cfe645c0a915bd9991dcc3b25e6673a0de39c8e16a4",
+    "adaptation": "Comments and non-numerical message text only."
+  },
+  {
+    "commit": "a297718acb832f82c62e95c26482a293e85650cd",
+    "source_path": "checkpoint_continuation.py",
+    "bundle_path": "implementation_audit/historical_code/a297718_checkpoint_continuation.py",
+    "sha256": "ac326bbee12cbba07a0106e81ba6fb1f14ab3229f6e884b6fa701a8c4a0928a3",
+    "original_sha256": "ecb97df309c748b21391f46de26d491229a94bd27e57503d96cd2a1fe96274cb",
+    "adaptation": "Comments and non-numerical message text only."
+  },
+  {
+    "commit": "6cf8127e4593552bddec41e2ccac99d1b5ba27dd",
+    "source_path": "sampling_backend.py",
+    "bundle_path": "implementation_audit/historical_code/6cf8127_sampling_backend.py",
+    "sha256": "77b1d2b0650405a5ecc1faacbc938d672981e99e015f7ccca80a1bff2c102b69"
+  },
+  {
+    "commit": "a297718acb832f82c62e95c26482a293e85650cd",
+    "source_path": "sampling_backend.py",
+    "bundle_path": "implementation_audit/historical_code/a297718_sampling_backend.py",
+    "sha256": "77b1d2b0650405a5ecc1faacbc938d672981e99e015f7ccca80a1bff2c102b69"
+  }
+]

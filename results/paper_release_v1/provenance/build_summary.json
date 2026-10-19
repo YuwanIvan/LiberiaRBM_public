@@ -1,0 +1,16 @@
+{
+  "configs": 82,
+  "model_groups": {
+    "M110_seed11": 17,
+    "M110_seed12": 13,
+    "M110_seed13": 10,
+    "M1100_seed16": 41,
+    "M110_seed14": 1
+  },
+  "table_cells": 144,
+  "source_files": 626,
+  "source_bytes": 3652209,
+  "public_data_scope_version": "liberiarbm-public-data-scope-v1",
+  "public_data_scope_record": "provenance/public_data_scope.json",
+  "manuscript_asset_files": 17
+}

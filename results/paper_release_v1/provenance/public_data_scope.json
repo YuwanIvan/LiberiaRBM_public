@@ -1,0 +1,58 @@
+{
+  "schema_version": "liberiarbm-public-data-scope-v1",
+  "included_categories": [
+    "calibrated model parameters",
+    "simulation results",
+    "distance data",
+    "inventory data"
+  ],
+  "excluded_category": "original CHA-level records",
+  "removed_files": [
+    {
+      "path": "code/data/CHA_weekly.xlsx",
+      "sha256": "cd0af66aec86059e2e68cb69b833a225b716f4affdbe9ae552b68cbce4c9a66b",
+      "reason": "Original CHA-level records excluded from the public package."
+    },
+    {
+      "path": "results/paper_release_v1/data/sources/code/data/CHA_weekly.xlsx",
+      "sha256": "cd0af66aec86059e2e68cb69b833a225b716f4affdbe9ae552b68cbce4c9a66b",
+      "reason": "Original CHA-level records excluded from the public package."
+    }
+  ],
+  "adapted_notebook": {
+    "path": "results/paper_release_v1/data/sources/code/data/parameter.ipynb",
+    "original_sha256": "5e632d54fa07f576cf62df16862a4e476adfdbc86d147826e15481397d99bd51",
+    "public_sha256": "de3e3cb4d1a4ab188ea7ee67cebbc0aba6c8c7e451661200f0320d88a3d1270e",
+    "removed_output_cells_original_zero_based": [
+      9
+    ],
+    "code_cells_unchanged": true,
+    "other_result_outputs_unchanged": true
+  },
+  "source_manifest": {
+    "path": "results/paper_release_v1/provenance/source_manifest.csv",
+    "previous_sha256": "942f62e701575074406be0c445a8c695d091b9d157e1aa8c7f64f3fb4dfaa25d",
+    "public_sha256": "64e703f4501f6e2cce11b78c195e14045b25eecf60f67e3d9daf401935df7a45",
+    "previous_file_count": 722,
+    "public_file_count": 626,
+    "previous_bytes": 5522957,
+    "public_bytes": 3652209
+  },
+  "calibration_from_original_records_available": false,
+  "figure_table_reproduction_from_retained_inputs_available": true,
+  "data_license": "No separate data license assigned; MIT applies to code and software documentation only.",
+  "working_materials_included": false,
+  "simulation_result_scope": {
+    "baseline_comparison_stream": 16,
+    "baseline_policies": 7,
+    "reported_sensitivity_settings_retained": true,
+    "source_quality_flags_retained": true,
+    "cluster_job_ids_in_result_tables": false
+  },
+  "workbook_metadata": {
+    "local_save_paths_included": false,
+    "editor_names_included": false,
+    "worksheet_xml_unchanged": true,
+    "workbook_copies_checked": 3
+  }
+}

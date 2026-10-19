@@ -1,0 +1,18 @@
+{
+  "source": "results/paper_release_v1/provenance/run_metadata/bd3799989041ba15/provenance/runtime.json",
+  "environment": {
+    "python_version": "3.12.9 (main, Mar 27 2025, 19:42:53) [GCC 8.5.0 20210514 (Red Hat 8.5.0-24)]",
+    "torch": {
+      "cuda_available": true,
+      "cuda_build": "12.4",
+      "device_count": 1,
+      "device_names": [
+        "NVIDIA H100 80GB HBM3"
+      ],
+      "version": "2.6.0+cu124"
+    }
+  },
+  "repository": {
+    "commit": "a297718acb832f82c62e95c26482a293e85650cd"
+  }
+}

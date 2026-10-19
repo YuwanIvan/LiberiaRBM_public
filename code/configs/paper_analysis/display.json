@@ -1,0 +1,13 @@
+{
+  "font_family": "DejaVu Sans",
+  "font_size": 10,
+  "dpi": 180,
+  "line_width": 1.8,
+  "ci_alpha": 0.18,
+  "colors": ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9"],
+  "baseline_policies": ["E3_mean_rollout", "Scaled_Static"],
+  "table_font_size_pt": 10,
+  "table_latex_font_size": "small",
+  "table_fit_width": true,
+  "table_precision_overrides": {}
+}

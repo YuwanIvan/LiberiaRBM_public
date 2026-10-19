@@ -1,0 +1,25 @@
+\begin{table}[!ht]
+\centering
+\small
+\caption{Model parameters in the baseline test problem for the Fangonda cluster.}
+\label{tab:baseline_parameters}
+\begin{tabular}{lll}
+\toprule
+Parameter & Interpretation & Baseline Value \\
+\midrule
+$T$ & Planning horizon & $22$ \\
+$K$ & Number of CHAs & $7$ \\
+$\theta(n)$ & Weekly incidence probability & See Equation~\eqref{eq:weekly_incidence_probability} and Figure~\ref{fig:theta_calibration}\\
+$\mu_k(n)$, $\Gamma_{kk}(n)$ & Weekly demand mean and variance & See Equations~\eqref{eq:weekly_demand_cha}--\eqref{eq:weekly_demand_hf}\\
+$\Gamma_{k\ell}(n)$, $k\neq \ell$ & Cross-location covariance & $0$ \\
+$p_k$ & Referral compliance probability & $0.69$ \\
+$d_k$ & Distance from CHA $k$ to HF & $(11,3.8,3,0.25,5,5,0.5)$ \\
+$u$ & Untreated cost unit & $1$ \\
+$c_k$ & Shortage cost & See Equation~\eqref{eq:shortage_cost_calibration} \\
+$Q(0)$ & Initial unallocated inventory & $142$ \\
+$\lambda$ & Weight on fairness utility & $0.25$ \\
+$\alpha$ & Curvature parameter of fairness utility & $0.5$ \\
+$\eta_k$ & Shipment bound & See Equations~\eqref{eq:eta_k}--\eqref{eq:eta_0} \\
+\bottomrule
+\end{tabular}
+\end{table}

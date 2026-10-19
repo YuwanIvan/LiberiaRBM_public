@@ -1,0 +1,43 @@
+Parameter,M110 — coarse,M1100 — fine
+Time horizon (weeks),22,22
+Time intervals / steps per week,110 / 5,1100 / 50
+Time step (weeks),0.2,0.02
+State coordinates,"Q, Z0, ..., Z7 (9 coordinates)","Q, Z0, ..., Z7 (9 coordinates)"
+Hidden layers × width,4 × 512,4 × 512
+Activation,GELU,GELU
+Fresh H / G initialization,xavier_uniform / kaiming_uniform,xavier_uniform / kaiming_uniform
+G output bias,True,True
+Input normalization,State divided by scenario Q0 (baseline 142),State divided by scenario Q0 (baseline 142)
+H output scaling,H = H_hat / 4.0,H = H_hat / 4.0
+Loss,ce_consistency,ce_consistency
+Consistency coefficient,30.0,30.0
+Optimizer,"Adam, joint H/G parameters; default betas/epsilon","Adam, joint H/G parameters; default betas/epsilon"
+Batch size,3072,3072
+Validation size per interval,16384,16384
+Terminal learning rate,0.001,0.001
+Terminal iteration budget,50000,30000
+Terminal LR milestones,"[10000, 30000]","[6000, 18000]"
+Interior learning rate,0.0002,0.0002
+Interior maximum iterations,8000,2500
+Interior LR milestones,"[1000, 4000]","[400, 1200]"
+LR multiplier (terminal / interior),0.5 / 0.5,0.5 / 0.5
+Validation every (iterations),25,50
+Early stopping: terminal / interior,Disabled / enabled,Disabled / enabled
+Interior minimum iterations,1200,1200
+Patience setting (iterations),1500,1500
+Stop after non-improving checks,> 60 (implementation uses strict >),> 30 (implementation uses strict >)
+Minimum improvement,5e-05,5e-05
+Checkpoint retained,Lowest validation loss checkpoint restored,Lowest validation loss checkpoint restored
+Gradient clipping,"Joint H/G norm, maximum 1.0","Joint H/G norm, maximum 1.0"
+Reference mixture,R4,R4
+R0 / R1 / R2 rollout counts,"R0:16384,R1:8192,R2:8192","R0:16384,R1:8192,R2:8192"
+Rollout pool size,32768,32768
+Sampler weights: rollout / box / shortage,1 / 0 / 0,1 / 0 / 0
+Initial-state mixture,Nominal with probability 0.7; perturbed with probability 0.3,Nominal with probability 0.7; perturbed with probability 0.3
+Perturbed initial Q,"Uniform [0.95 Q0, 1.05 Q0]","Uniform [0.95 Q0, 1.05 Q0]"
+Perturbed initial Zi,"Independent uniform [0, 0.0125 Q0]","Independent uniform [0, 0.0125 Q0]"
+Training order,Backward over all intervals,Backward over all intervals
+Block-entry initialization,Fresh terminal H/G; then backward warm start,Coarse j initializes fine 10j+9; block size 10
+Adjacent-interval warm start,Unconditional,"Only if mu, Gamma, eta match; tolerance 1e-8"
+Coarse optimizer state inherited,Not applicable,No optimizer / scheduler / early-stop state inherited
+Optimizer / scheduler per interval,Reinitialized,Reinitialized

@@ -1,0 +1,19 @@
+\begin{table}[!ht]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.12}
+    \caption{Demand-overdispersion response when $\lambda=0.25$.}
+    \label{tab:demand_overdispersion_performance}
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+    Variance & \makecell{Objective gap vs.\\fairness-only} & \makecell{Operating\\cost} & \makecell{Fairness\\utility} & Coverage & \makecell{Mismatch\\frequency} & $\bar S$ & $S_+$ \\
+    \midrule
+    1$\times$ & -2.794 & 71.420 & 335.799 & 0.676 & 0.852 & 1.276 & 1.497 \\
+    2$\times$ & -4.698 & 73.660 & 334.153 & 0.668 & 0.725 & 1.458 & 2.012 \\
+    5$\times$ & -7.470 & 79.714 & 332.506 & 0.647 & 0.536 & 1.861 & 3.474 \\
+    \bottomrule
+    \end{tabular}
+    \par\vspace{2pt}
+    \parbox{0.98\textwidth}{\footnotesize \textit{Note:} $\bar S$ is mean absolute mismatch severity and $S_+$ is mean severity conditional on a positive mismatch event.}
+\end{table}

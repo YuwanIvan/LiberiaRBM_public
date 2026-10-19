@@ -1,0 +1,40 @@
+{
+  "run_id": "44fa1e6a5bb95c9f",
+  "repository": {
+    "commit": "f6553299baf9739fe8995537723786f1cfc4c0ef"
+  },
+  "environment": {
+    "python_version": "3.12.9 (main, Mar 27 2025, 19:42:53) [GCC 8.5.0 20210514 (Red Hat 8.5.0-24)]",
+    "torch": {
+      "cuda_available": true,
+      "cuda_build": "12.4",
+      "device_count": 1,
+      "device_names": [
+        "NVIDIA H100 80GB HBM3"
+      ],
+      "version": "2.6.0+cu124"
+    }
+  },
+  "artifacts": [
+    {
+      "role": "r2_training_reference",
+      "sha256": "7b7f263d44b0c17e3fad4cce2fe585f1fa19f64f771a010a744d004e691efbfb"
+    },
+    {
+      "role": "target_lambda_fluid_benchmark",
+      "sha256": "f11862c885c819d5d0b85775a8ad89a1855eafba7cd2addb03037525203af4ab"
+    },
+    {
+      "role": "evaluation_bank",
+      "sha256": "d1b4287e80a170c46acb1c059b8dde75548efbfecba9b7adc1fd7a56c61d8b2a"
+    },
+    {
+      "role": "rho_calibration",
+      "sha256": "d6b521b0123440a7c841a5a09bf520c82af0e9961060917ada0f54ffc53d33ba"
+    },
+    {
+      "role": "rho_validation",
+      "sha256": "7bf01f06e4e38d760a555a68ebef97b6ff864866b2500de5e95fa6ab44c1ee8e"
+    }
+  ]
+}

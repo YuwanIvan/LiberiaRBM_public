@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.runtime/
+results/paper_release_v1/exports/
+*.pth
+*.pt
+code/output*/
+code/logs/
+models/downloads/
+
+# Original CHA observations are excluded from the public release.
+CHA_weekly.xlsx

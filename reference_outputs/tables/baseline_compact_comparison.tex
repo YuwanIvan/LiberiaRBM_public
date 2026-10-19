@@ -1,0 +1,19 @@
+\begin{table}[!ht]
+    \centering \small
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.12}
+    \caption{Baseline policy comparison when $\lambda=0.25$.}
+    \label{tab:baseline_compact_comparison}
+    \begin{tabular}{lrrrrrr}
+    \toprule
+    Policy & \makecell{Total\\objective} & \makecell{Operating\\cost} & \makecell{Fairness\\utility} & Coverage & \makecell{Mean CHA\\local fill} & \makecell{HF shipment\\share} \\
+    \midrule
+    Our policy & -12.530 & 71.420 & 335.799 & 0.676 & 0.661 & 0.531 \\
+    80--20 Rule & 12.300 & 72.799 & 241.994 & 0.688 & 0.293 & 0.800 \\
+    Static & -0.909 & 70.683 & 286.370 & 0.679 & 0.672 & 0.528 \\
+    Fairness-only & -9.736 & 76.090 & 343.307 & 0.655 & 0.624 & 0.528 \\
+    Myopic & 19.827 & 77.857 & 232.118 & 0.652 & 0.495 & 0.635 \\
+    Fluid-optimal & -2.744 & 81.899 & 338.569 & 0.618 & 0.781 & 0.365 \\
+    \bottomrule
+    \end{tabular}
+\end{table}

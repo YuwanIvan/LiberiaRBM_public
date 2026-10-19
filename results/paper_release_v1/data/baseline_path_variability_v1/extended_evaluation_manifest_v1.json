@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "bytes": 9935148,
+      "path": "periodic_review_state_histories_v1.npz",
+      "sha256": "79c003d69b5a062a82262e5104a1fbeaed4a0937a97484c6c41ce505cb26e0dc"
+    },
+    {
+      "bytes": 1115,
+      "path": "mismatch_metrics_v1.csv",
+      "sha256": "cb9592197b8a8539057b946246a6a3000d39867c37f3019b835e58b6474452b4"
+    },
+    {
+      "bytes": 13805,
+      "path": "location_level_metrics_v1.csv",
+      "sha256": "fee766e46ac019074202c826e70a8db817d9688f2c5137c372c2e82853a02697"
+    },
+    {
+      "bytes": 281507,
+      "path": "weekly_location_trajectories_v1.csv",
+      "sha256": "a37dcfd8f4b6a5e77308bd375af394692be8b715a308c95a17600de57124549e"
+    },
+    {
+      "bytes": 1818,
+      "path": "extended_evaluation_validation_v1.json",
+      "sha256": "95296e13840b9632f8e31177e7965b6534c17ac2123de7a98111145e3cf9c725"
+    }
+  ],
+  "metadata": {
+    "evaluation_bank_id": "final-m1100-fangonda_base-paths10000-seed2026082202-v1",
+    "evaluation_bank_sha256": "0a83da336af8081af40de2e1b0b76f8cf43e06ade23d16ecc20e90d2d5d0eac4",
+    "evaluation_commit": "be9bb4e116c84efc5d343fb34848ebc8f94dd0c0",
+    "evaluation_run_id": "STREAM16-EXTENDED-EVALUATION-NOMINAL_LAM0P25",
+    "setting_id": "nominal_lam0p25",
+    "stream_id": 16
+  },
+  "raw_arrays": [
+    "z_hist",
+    "l_hist"
+  ],
+  "raw_arrays_not_retained": [
+    "q_hist",
+    "d_hist"
+  ],
+  "retained_policies": [
+    "E3_mean_rollout",
+    "Scaled_Static"
+  ],
+  "schema_version": "extended-evaluation-artifact-manifest-v1"
+}
